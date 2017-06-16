@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.growingio.android'
 
 android {
     compileSdkVersion 23
@@ -22,6 +23,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    compile 'com.growingio.android:vds-android-agent:0.9.105@aar'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile project(':lib.style')
 }
